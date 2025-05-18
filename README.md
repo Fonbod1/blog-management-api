@@ -69,17 +69,30 @@ http://localhost:8084/swagger-ui.html
 #
 # Folder Structure
 
-src/
-├── controller/
-│   ├── AuthenticationController.java
-│   └── UserController.java
-├── dto/
-│   ├── SignUpRequest.java
-│   ├── SigninRequest.java
-│   └── JwtAuthenticationResponse.java
-├── model/
-│   └── User.java
-├── service/
-│   └── AuthenticationService.java
-│   └── UserService1.java
-
+blog-management/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── blog/
+│   │   │           └── management/
+│   │   │               ├── BlogManagementApplication.java
+│   │   │               ├── controller/
+│   │   │               ├── model/
+│   │   │               ├── repository/
+│   │   │               └── service/
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   │   │   └── static/
+│   │   │   └── templates/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── blog/
+│                   └── management/
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── README.md
+```
