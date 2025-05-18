@@ -28,49 +28,46 @@ It supports  Article creation, viewing, updating, and deletion.
 http://localhost:8084/swagger-ui.html
 #
 # HOW TO ACCESS THE API
-1 clone the repository and open it from intellij.
-2 launch postgresql
-3 open postman and run the different end points.
+1 Clone the repository and open it from IntelliJ.
+2 Launch PostgreSQL
+3. Open Postman and run the different endpoints.
 #
-<img src="" alt=" Screenshot" width="800"/>
+ ## Creating an Article
 #
-2. Sign in with a user email and password that you have created. NB: Use your own names to sign up.
-  Once you sign in, a Token and a refresh token will be generated. Copy the refresh token and paste it
-  Inside the token in the refresh endpoint
+<img src="https://github.com/Fonbod1/blog-management-api/blob/master/blog-management/src/main/resources/Screenshot%20Blog%20Management/Screenshot%20Create%20Article.png?raw=true" alt="Create Article Screenshot" width="800"/>
 #
-<img src="https://github.com/Fonbod1/User-Management-Api/blob/main/Endpoint%20photo/Signin.png?raw=true" alt="Signup Screenshot" width="1000"/>
+## Updating an Article
 #
-3. Get Token: Paste the refresh token that was generated when you sign in, paste it within the "token": "paste here", this will generate a token once you click POST. Copy the token that has been generated to use it to authenticate and log in as a user or admin
+<img src="https://github.com/Fonbod1/blog-management-api/blob/master/blog-management/src/main/resources/Screenshot%20Blog%20Management/Screenshot%20update%20Article.png?raw=true" Update an Article Screenshot" width="800"/>
 #
-<img src="https://github.com/Fonbod1/User-Management-Api/blob/main/Endpoint%20photo/Token.png?raw=true" alt="Signup Screenshot" width="1000"/>
+ ## View all Articles
 #
-4. AUTHENTICATION: At your user endpoint in Postman, select the authentication submenu, paste the token you copied from the sign-in, and click Get. This will authenticate you as a user or admin. From here, you can use the different user or admin endpoints within the API.
+<img src="https://github.com/Fonbod1/blog-management-api/blob/master/blog-management/src/main/resources/Screenshot%20Blog%20Management/Screenshot%20Get%20All%20Article.png?raw=true" get all ArticleScreenshot" width="800"/>
 #
- <img src ="https://github.com/Fonbod1/User-Management-Api/blob/main/Endpoint%20photo/Authenticate%20User.png?raw=true" alt = "Authentication" width = "1000">
+  ## View a particular Article
+#
+ <img src ="https://github.com/Fonbod1/blog-management-api/blob/master/blog-management/src/main/resources/Screenshot%20Blog%20Management/Screenshot%20Get%20article%20ById.png?raw=true" alt = "View All Articles" width = "900">
+ #
+ ## Delete an Article
+ #
+  <img src ="https://github.com/Fonbod1/blog-management-api/blob/master/blog-management/src/main/resources/Screenshot%20Blog%20Management/Screenshot%20Delete%20Article.png?raw=true" alt = "Delete an Articles" width = "900">
+
  #
 
-# Authentication Endpoints
-## Base URL: /api/v1/auth
-
-|     Method    |     Endpoint  |    Description                                        |
-| :-----------: | :-----------: | :---------------------------------------------------: |
-| POST          |  /signup      |  Register a new user                                  |
-| POST          |  /signin      |  Authenticate and get JWT                             |
-| POST          |  /refresh     |  Refresh access token using refresh token             |
 
 #
-# User And Admin Management Endpoints
-## Base URL: /api/v1/user  ,  /api/v1/admin
+# Article Management Endpoints
+## Base URL: /api/articles  
 #
 
 |     Method    |     Endpoint  |    Description                                        |
 | :-----------: | :-----------: | :---------------------------------------------------: |
-| Get           |   Base URL    |  Check user and admin login status                    |
-| Get           |  /get/all     |  View all users and                                   |
-| Get           |  /get/{id}    |  Get user by ID                                       |
-| Put           | /update/{id}  | Update user                                           |
-| Delete        | /delete/{id}  | Delete user                                           |
-| POST          | /create       | Create a new user                                     |
+|               |               |                                                       |
+| Get           |   /all        |  View all Articles and                                   |
+| Get           |  /{id}        |  Get Article by ID                                    |
+| Put           | /{id}         | Update Article                                        |
+| Delete        | /{id}         | Delete article                                        |
+| POST          | /create       | Create a new Aricle                                   |
 #
 # Folder Structure
 
