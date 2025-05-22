@@ -29,10 +29,10 @@ http://localhost:8084/swagger-ui.html
 #
 # HOW TO ACCESS THE API
 #
-## To have access to the api do the following!!
-1 Clone the repository and open it from IntelliJ.
-2 Launch PostgreSQL
-3. Open Postman and run the different endpoints.
+## To have access to the API, do the following!!
+1. Clone the repository and open it from IntelliJ
+2. Launch PostgreSQL
+3. Open Postman and run the different endpoints
 
  Creating an Article
 
