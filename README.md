@@ -28,6 +28,7 @@ It supports  Article creation, viewing, updating, and deletion.
 http://localhost:8084/swagger-ui.html
 #
 # HOW TO ACCESS THE API
+## 
 1 Clone the repository and open it from IntelliJ.
 2 Launch PostgreSQL
 3. Open Postman and run the different endpoints.
